@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gavekort til pardans</title>
+  <style>
+    @page { size: A4; margin: 0; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #f8f1e7;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: auto;
+      position: relative;
+      background: linear-gradient(135deg, #fff8f0, #fdebd7);
+      border: 14px solid #b7795a;
+      overflow: hidden;
+    }
+
+    .flags {
+      position: absolute;
+      top: 10mm;
+      width: 100%;
+      text-align: center;
+      font-size: 26px;
+      letter-spacing: 6px;
+      opacity: 0.9;
+    }
+
+    .flags.bottom {
+      top: auto;
+      bottom: 10mm;
+    }
+
+    .confetti {
+      position: absolute;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .c1 { top: 50mm; left: 20mm; }
+    .c2 { top: 70mm; right: 25mm; }
+    .c3 { bottom: 80mm; left: 40mm; }
+    .c4 { bottom: 100mm; right: 35mm; }
+
+    .content {
+      padding: 30mm 20mm;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 2mm;
+      color: #5b2f23;
+    }
+
+    .birthday {
+      font-size: 22px;
+      color: #b04b63;
+      margin-bottom: 10mm;
+    }
+
+    .heartline {
+      font-size: 22px;
+      letter-spacing: 8px;
+      color: #b04b63;
+      margin-bottom: 10mm;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.85);
+      border-radius: 25px;
+      padding: 14mm;
+      max-width: 160mm;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .gift-title {
+      font-size: 28px;
+      margin-bottom: 6mm;
+    }
+
+    .gift-text {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 6mm;
+    }
+
+    .choice {
+      margin: 6mm auto;
+      padding: 6mm;
+      border-radius: 999px;
+      background: rgba(176,75,99,0.2);
+      font-size: 17px;
+    }
+
+    .footer {
+      margin-top: auto;
+      font-size: 18px;
+    }
+
+    .signature {
+      margin-top: 4mm;
+      font-size: 26px;
+      font-style: italic;
+      color: #8f3f55;
+    }
+
+    .icons {
+      font-size: 32px;
+      margin-bottom: 6mm;
+    }
+
+    .logo {
+      margin: 10mm 0 6mm;
+    }
+
+    .logo img {
+      max-width: 120mm;
+      height: auto;
+      opacity: 0.95;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="flags">🎉 🇩🇰 🎈 🇩🇰 🎉 🇩🇰 🎈 🇩🇰 🎉</div>
+    <div class="flags bottom">🎉 🇩🇰 🎈 🇩🇰 🎉 🇩🇰 🎈 🇩🇰 🎉</div>
+
+    <div class="confetti c1">•</div>
+    <div class="confetti c2">•</div>
+    <div class="confetti c3">•</div>
+    <div class="confetti c4">•</div>
+
+    <div class="content">
+
+      <div class="logo">
+        <!-- Indsæt billedfilen i samme mappe og navngiv den fx 'madsvad.png' -->
+        <img src="madsvad.png" alt="Mads Vad logo">
+      </div>
+
+      <h1>Til søde Ida B </h1>
+      <div class="birthday">🎂 Kære honey, stort tillykke med de 25 år 🎂</div>
+
+      <div class="heartline">♥ ♪ ♥ ♪ ♥</div>
+
+      <div class="card">
+        <div class="icons">💃 🕺 🎉</div>
+
+        <div class="gift-title">Du inviteres hermed til pardans med mig</div>
+
+        <p class="gift-text">
+          Min gave til dig er et måneds abonnement til  <strong>pardans for nybegyndere</strong><br>
+          hos <strong>Mads Vad's Danseskole</strong>.
+        </p>
+
+        <div class="choice">
+          Du vælger selv, om vi skal starte i <strong>august</strong> eller <strong>oktober</strong>.
+        </div>
+
+        <p class="gift-text">
+          En gave med dans, grin og tid sammen ❤️
+        </p>
+
+      </div>
+
+      <div class="footer">
+        Jeg glæder mig til at danse med dig (og se dine moves).
+        <div class="signature">Mange knus og kram</div>
+      </div> fra mig ❤️
+
+    </div>
+  </div>
+</body>
+</html>
